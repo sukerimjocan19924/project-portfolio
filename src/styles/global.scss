@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'themes' ;
+@use 'buttons';
 
 *,
 *::before,
@@ -34,14 +35,10 @@ a {
 
 button {
   font: inherit;
-  cursor: pointer;
 }
 
 .inner {
   max-width: 120rem;
-  display: flex;
-  align-items: center;
   margin: 0 auto;
-  justify-content: space-between;
-  background-color: var(--color-bg);
+  position: relative;
 }

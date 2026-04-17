@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+.btn {
+    border-radius: $radius-md;
+    padding: .6rem 1.25rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+
+    &__outline {
+        border: 1px solid var(--color-primary);
+        background-color: transparent;
+        color:var(--color-text);
+    }
+
+    &__primary {
+        border: none;
+        background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-text)
+    }
+    
+    &__small{
+        font-size: 1.2rem;
+    }
+}
