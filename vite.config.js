@@ -7,4 +7,8 @@ export default defineConfig({
   css:{
     devSourcemap:true
   },
+  server: {
+    port: 5174,        // 원하는 포트 번호
+    host: '0.0.0.0',   // 컨테이너 안에서 외부 접근 가능하게(npm run dev 사용)
+  },
 })
