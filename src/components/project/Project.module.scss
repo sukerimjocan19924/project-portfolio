@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-.Project_section {
+.project_section {
     background-color: var(--color-bg-muted);
     transition: $transition-theme;
 
@@ -10,6 +10,7 @@
         .grid {
             display: grid;
             gap: $space-3;
+            margin-top: $space-3;
             grid-template-columns: 1fr;
             
             @media (min-width: 768px) {

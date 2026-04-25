@@ -1,6 +1,8 @@
 @use '../../styles/variables' as *;
 
 .tools {
+    position: relative;
+    
     .inner {
         padding: $space-12 0;
         

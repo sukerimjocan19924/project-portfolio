@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-.caard {
+.card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -35,6 +35,7 @@
         .desc {
             font-size: $font-size-sm;
             color: var(--color-text-muted);
+            min-height: 5rem;
         }
 
         .cta {

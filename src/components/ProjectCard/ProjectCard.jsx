@@ -5,11 +5,11 @@ import Tag from '../tag/Tag'
 const ProjectCard = ({
     title,
     description,
-    tags=[],
-    imageAlt=''
+    tags = [],
+    imageAlt = ''
 }) => {
   return (
-    <article className={styles.caard}>
+    <article className={styles.card}>
         <div
             className={styles.thumb}
             role='img'
@@ -34,7 +34,7 @@ const ProjectCard = ({
                     Live demo
                 </button>
                 <button className='btn btn__outline btn__md'>
-                    View demo
+                    View code
                 </button>
             </div>
         </div>

@@ -5,7 +5,8 @@ import ProgressBar from '../progressBar/ProgressBar'
 const CategoryCard = ({
   title,
   accent='primary',
-  skills=[]
+  skills=[],
+  progress=1,
 }) => {
   return (
     <article className={styles.card}>
@@ -14,12 +15,13 @@ const CategoryCard = ({
       </h3>
 
       <div className={styles.list}>
-        {skills.map(({ name, percent }) => (
+        {skills.map(({ name, percent, showPercent }) => (
           <ProgressBar
             key={name}
             label={name}
             percent={percent}
-            accent={accent} />
+            accent={accent}
+            showPercent={showPercent !==false} />
         ))}
       </div>
     </article>
