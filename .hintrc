@@ -9,7 +9,8 @@
         "ignore": [
           "backdrop-filter",
           "border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-border))",
-          "-webkit-overflow-scrolling"
+          "-webkit-overflow-scrolling",
+          "border: .2rem dashed color-mix(in srgb, var(--color-text-muted) 45%, transparent)"
         ]
       }
     ]
