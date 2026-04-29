@@ -61,4 +61,8 @@
         background: rgba(245, 158, 11, 0.18);
         color: var(--color-warning);
     }
+
+    &__center{
+        align-self: center;
+    }
 }

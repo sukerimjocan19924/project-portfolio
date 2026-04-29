@@ -1,6 +1,6 @@
 @import url(https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css);
 $base-unit: 1rem; // 10px 기준
-$font-sans: 'SUIT Variable','Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$font-sans: 'SUIT Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
 $font-size-xs: 1.2rem; // 12px
 $font-size-sm: 1.4rem; // 14px
@@ -36,6 +36,17 @@ $radius-full: 9999px;
 $color-primary: #7c3aed;
 $color-primary-hover: #5b1cc0;
 
+
+$color-bg: #ffffff;
+$color-bg-muted: #f8fafc;
+$color-card-bg: #ffffff;
+$color-border: #e2e8f0;
+$color-text: #0f172a;
+$color-text-muted: #64748b;
+
+$btn-primary-bg: $color-primary;
+$btn-primary-text: #ffffff;
+
 $color-success: #10b981;
 $color-info: #3b82f6;
 $color-warning: #f59e0b;
@@ -45,7 +56,7 @@ $shadow-sm: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
 $shadow-md: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
 $shadow-lg: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
 
-$breakpoint-sm: 50rem;
+$breakpoint-sm: 64rem;
 $breakpoint-md: 76.8rem;
 $breakpoint-lg: 102.4rem;
 $breakpoint-xl: 128rem;
