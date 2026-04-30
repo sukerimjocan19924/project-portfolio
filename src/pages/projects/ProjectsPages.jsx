@@ -1,8 +1,9 @@
 import React, {useMemo, useState} from 'react'
 import styles from './ProjectsPages.module.scss'
-import FeaturedProjectCard from '../../components/featuredProjectCard/FeaturedProjectCard.jsx'
-import { useReducedMotion } from 'framer-motion'
+import FeaturedProjectCard from '../../components/featuredProjectCard/FeaturedProjectCard'
+import { motion as Motion, useReducedMotion } from 'framer-motion'
 import { projectFilters, projectsPageItems } from '../../utils/projectsPageData'
+import { projectItemMotion, projectItemTransition } from '../../utils/aniValue'
 
 const ProjectsPages = () => {
 
@@ -25,7 +26,7 @@ const ProjectsPages = () => {
           <span className="badge badge__primary badge__center">Featured work</span>
           <h1 className={styles.title}>Projects I&apos;m proud of</h1>
           <p className={styles.lead}>
-            From shipped products to open-source experiments <br/> — a sample of things I enjoyed building end to end.
+            From shipped products to open-source experiments <br /> — a sample of things I enjoyed building end to end.
           </p>
         </header>
 
@@ -46,8 +47,14 @@ const ProjectsPages = () => {
           <p>No project in this category yet</p>
         ) : (
           <div className={styles.grid}>
-            {visible.map((project) => (
-              <div key={project.id}>
+            {visible.map((project, index) => (
+              <Motion.div
+                layout={!shouldReduceMotion}
+                {...projectItemMotion}
+                transition={
+                  projectItemMotion ? {...projectItemTransition, delay: index*0.05} : undefined
+                }  
+                key={project.id}>
                 <FeaturedProjectCard
                   title={project.title}
                   description={project.description}
@@ -57,8 +64,8 @@ const ProjectsPages = () => {
                   meta={project.meta}
                   demoHref={project.demoHref}
                   codeHref={project.codeHref}
-                  domoLabel={project.demoLabel} />
-              </div>
+                  demoLabel={project.demoLabel} />
+              </Motion.div>
             ))}
           </div>
         )}
