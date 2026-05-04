@@ -161,4 +161,50 @@ export const icons = {
             />
         </svg>
     ),
+    
+    sparkle: (props) => (
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
+            <path d="M12 2l1.09 4.26L17 7.27l-3.18 2.55L15.18 14 12 11.77 8.82 14l1.36-4.18L7 7.27l3.91-.99L12 2zm0 10l1.09 4.26L17 17.27l-3.18 2.55L15.18 24 12 21.77 8.82 24l1.36-4.18L7 17.27l3.91-.99L12 12z" />
+        </svg>
+    ),
+
+    monitor: (props) => (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden {...props}>
+            <rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.75" />
+            <path d="M8 20h8M12 16v4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+        </svg>
+    ),
+
+    server: (props) => (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden {...props}>
+            <rect x="4" y="4" width="16" height="5" rx="1" stroke="currentColor" strokeWidth="1.75" />
+            <rect x="4" y="10" width="16" height="5" rx="1" stroke="currentColor" strokeWidth="1.75" />
+            <circle cx="8" cy="6.5" r="0.75" fill="currentColor" />
+            <circle cx="8" cy="12.5" r="0.75" fill="currentColor" />
+        </svg>
+    ),
+
+    flask: (props) => (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden {...props}>
+            <path
+                d="M10 2h4v5l4 9a3 3 0 0 1-2.65 4.45H8.65A3 3 0 0 1 6 16l4-9V2z"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinejoin="round"
+            />
+            <path d="M8 14h8" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+        </svg>
+    ),
+
+    cloud: (props) => (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden {...props}>
+            <path
+                d="M18 17h1a4 4 0 0 0 0-8 6 6 0 0 0-11.5-1.5A4 4 0 0 0 6 17h12"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    ),
 }
