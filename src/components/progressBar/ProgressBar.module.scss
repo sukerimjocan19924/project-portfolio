@@ -49,5 +49,21 @@
         &.accent_warning {
             background-color: var(--color-warning);
         }
+
+        &.accent_frontend {
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-info) 100%);
+        }
+
+        &.accent_backend {
+            background: linear-gradient(90deg, #059669 0%, var(--color-success) 100%);
+        }
+
+        &.accent_testing {
+            background: linear-gradient(90deg, #7c3aed 0%, #db2777 55%, #ec4899 100%);
+        }
+
+        &.accent_devops {
+            background: linear-gradient(90deg, #ea580c 0%, var(--color-warning) 45%, #ca8a04 100%);
+        }
     }
 }
