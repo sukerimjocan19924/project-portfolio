@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import Home from "./pages/home/Home"
 import About from "./pages/about/About"
-import Contact from "./pages/contact/Contact"
+import ContactPage from "./pages/contact/ContactPage"
 import ProjectsPages from "./pages/projects/ProjectsPages"
 import SkillsPages from "./pages/skills/SkillsPages"
 import PlaceholderPage from "./pages/PlaceholderPage"
@@ -30,7 +30,7 @@ function App() {
             <Route path="projects" element={<ProjectsPages/>} />
             <Route path="skills" element={<SkillsPages/>} />
             <Route path="blog" element={<Blog/>} />
-            <Route path="contact" element={<Contact/>} />
+            <Route path="contact" element={<ContactPage/>} />
             <Route path="privacy" element={<PlaceholderPage title="Privacy"/>} />
             <Route path="terms" element={<PlaceholderPage title="Terms"/>} />
             <Route path="404" element={<NotFound/>}/>
